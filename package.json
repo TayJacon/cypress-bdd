@@ -1,0 +1,15 @@
+{
+  "name": "cypress-bdd",
+  "version": "1.0.0",
+  "description": "This repository provides an integration between Cypress, a modern end-to-end testing framework, and Cucumber, a powerful behavior-driven development (BDD) tool. It offers a robust and efficient testing solution that combines the flexibility and ease of use of Cypress with the expressiveness and collaboration features of Cucumber.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
