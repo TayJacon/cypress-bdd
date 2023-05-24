@@ -4,12 +4,21 @@
   "description": "This repository provides an integration between Cypress, a modern end-to-end testing framework, and Cucumber, a powerful behavior-driven development (BDD) tool. It offers a robust and efficient testing solution that combines the flexibility and ease of use of Cypress with the expressiveness and collaboration features of Cucumber.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:chrome": "cypress run --browser chrome",
+    "test:chrome:open": "cypress run --browser chrome",
+    "cypress:open": "cypress open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.1.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.13.0"
+  },
   "devDependencies": {
-    "cypress-cucumber-preprocessor": "^4.3.1"
+    "esbuild": "^0.17.19",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0"
   }
 }
