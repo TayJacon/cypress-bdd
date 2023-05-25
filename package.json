@@ -1,0 +1,30 @@
+{
+  "name": "cypress-bdd",
+  "version": "1.0.0",
+  "description": "This repository provides an integration between Cypress, a modern end-to-end testing framework, and Cucumber, a powerful behavior-driven development (BDD) tool. It offers a robust and efficient testing solution that combines the flexibility and ease of use of Cypress with the expressiveness and collaboration features of Cucumber.",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "cypress run --browser chrome",
+    "test:chrome:open": "cypress open --browser chrome",
+    "cypress:open": "cypress open",
+    "cypress:allure": "cypress run --browser chrome --env allure=true --config video=false",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open allure-report",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^17.1.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.13.0"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "github:shelex/cypress-allure-plugin",
+    "esbuild": "^0.17.19",
+    "eslint": "^8.41.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.8.0"
+  }
+}
