@@ -13,7 +13,7 @@ Integrated with:
 - [x] https://github.com/bahmutov/cypress-esbuild-preprocessor
 - [x] https://github.com/Shelex/cypress-allure-plugin
 
-- ## 💻 Pre-requisites
+## 💻 Pre-requisites
 
 1. Node JS
 2. Optional: Java 8 for Allure Reporter
