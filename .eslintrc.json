@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["google", "plugin:cypress/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "no-param-reassign": "off",
+    "no-console": "off",
+    "space-before-function-paren": "off",
+    "no-use-before-define": "off",
+    "no-unused-expressions": "off",
+    "global-require": 0,
+    "no-restricted-syntax": "off",
+    "class-methods-use-this": "off"
+  },
+  "plugins": ["prettier", "cypress"]
+}

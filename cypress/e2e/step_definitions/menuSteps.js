@@ -1,22 +1,12 @@
-import {Given,When,Then,} from "@badeball/cypress-cucumber-preprocessor";
+import { When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import MenuObject from "../../support/componentObjects/menuObject";
 
-Given('I am on website homepage', () => {
-    cy.visit('/');
+const menuObject = new MenuObject();
+
+When("I click on menu icon", () => {
+  menuObject.openMenu();
 });
-  
-When('I click on menu icon', () => {
-    cy.get('.nav-button').click()
+
+Then("I should see the following menus and submenus:", (dataTable) => {
+  menuObject.validateMenuOption(dataTable);
 });
-  
-Then('I should see the following menus and submenus:', (dataTable) => {
-    const expectedMenuData = dataTable.hashes();
-    
-    cy.get('nav.breeze-nav .nav-link')
-    .then((el) => {
-      expect(el).to.have.length(expectedMenuData.length)
-      for (let i=0; i<el.length;i++) {
-        expect(el[i]).to.have.text(expectedMenuData[i]['Menu']).and.have.attr('href', expectedMenuData[i]["Href"])
-      }
-    })
-});
-  

@@ -17,8 +17,10 @@
     "cypress": "^12.13.0"
   },
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "github:shelex/cypress-allure-plugin",
     "esbuild": "^0.17.19",
     "eslint": "^8.41.0",
+    "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.8.0"
   }
 }
