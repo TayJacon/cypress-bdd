@@ -1,2 +1,6 @@
 /vendor/
 /node_modules/
+/videos/
+/screenshots/
+/allure-results/
+/allure-report/
